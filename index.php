@@ -33,9 +33,10 @@
 	</div>
 
 	<!-- Header section -->
-	<header >
-		<iframe src="/header.html" class="header" ></iframe>
-	</header>
+	
+		<!-- <iframe src="/header.html" class="header" ></iframe> -->
+		<?php require 'header.html'; ?>
+	
 	<!-- Header section end -->
 
 
