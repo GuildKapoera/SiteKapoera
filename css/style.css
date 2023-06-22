@@ -251,7 +251,10 @@ ol {
 /*------------------
   Header section
 ---------------------*/
+.header {
+	width: 100%;
 
+}
 .header-section {
 	background: #131313;
 	clear: both;
@@ -876,6 +879,7 @@ ol {
 	margin-bottom: 0;
 	font-weight: 500;
 	color: #aeaeae;
+	
 }
 
 /*------------------
