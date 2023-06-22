@@ -8,6 +8,10 @@
 /*---------------------------*/
 /* Template default CSS
 /*---------------------------*/
+@font-face {
+	font-family: corleone;
+	src: url(/fonts/Corleone.TTF);
+}
 
 html,
 body {
@@ -271,16 +275,19 @@ ol {
 	background: #ffb320;
 	padding: 8px 28px;
 	border-radius: 30px;
+	margin-top: 2rem;
 }
 
 .user-panel a {
 	font-size: 14px;
 	color: #131313;
+	
 }
 
 .main-menu {
 	float: right;
 	margin-right: 170px;
+	margin-top: 2rem;
 }
 
 .main-menu ul {
@@ -328,8 +335,14 @@ ol {
 	display: flex;
   	text-align: center;
 	margin-top: 20rem;
+	margin-left: 30rem;
+	background: rgba(3, 3, 3, 0.356);
+	display: inline-block;
+	padding: 20px;
+	border-radius: 5px;
+	font-size: 5rem;
 	
-	
+
 }
 
 .hero-slider .hs-text h2 {
@@ -340,7 +353,8 @@ ol {
 	position: relative;
 	top: -80px;
 	opacity: 0;
-	background: rgba(3, 3, 3, 0.438)
+	font-family: corleone;
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.719);
 	
 }
 
@@ -350,11 +364,11 @@ ol {
 
 .hero-slider .hs-text p {
 	color: #fff;
-	margin-bottom: 30px;
-	position: relative;
 	position: relative;
 	top: -90px;
 	opacity: 0;
+	
+	
 }
 
 .hero-slider .hs-text .site-btn {
@@ -725,7 +739,7 @@ ol {
 /*----------------------
   Footer top Section
 ------------------------*/
-
+/* 
 .footer-top-section {
 	background-image: url("../img/pattern.png");
 	background-repeat: repeat;
@@ -828,7 +842,7 @@ ol {
 .top-comment .tc-item .tc-content .tc-date {
 	font-size: 12px;
 	color: #ffb320;
-}
+} */
 
 /*----------------------
   Footer Section
