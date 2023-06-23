@@ -1160,6 +1160,19 @@ ol {
 	color: #1f2225;
 	font-weight: 500;
 }
+/*-----------------
+  About page
+--------------------*/
+.about .container p{
+	text-indent: 1rem;
+	margin-top: 2rem;
+
+}
+.about .container span{
+	color: #1f2225;;
+	display: flex;
+	justify-content: center;
+}
 
 /*-----------------
   Contact page
