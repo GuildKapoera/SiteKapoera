@@ -35,34 +35,45 @@
 	<!-- Header section -->
 	
 		<!-- <iframe src="/header.html" class="header" ></iframe> -->
-		<?php require 'header.html'; ?>
+		<header class="header-section">
+
+			<div class="container">
+				<!-- logo -->
+				<a class="site-logo" href="index.html">
+					<img src="img/logo.png" alt="">
+				</a>
+				<div class="user-panel">
+					<a href="#">Login</a>  /  <a href="#">Register</a>
+				</div>
+				<!-- responsive -->
+				<div class="nav-switch">
+					<i class="fa fa-bars"></i>
+				</div>
+				<!-- site menu -->
+				<nav class="main-menu">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="review.html">Servidor</a></li>
+						<li><a href="categories.html">Notícias</a></li>
+						<li><a href="community.html">Mercado</a></li>
+						<li><a href="contact.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+	</header>
+	
 	
 	<!-- Header section end -->
-
-
 	<!-- Hero section -->
-	<section class="hero-section">
-		<div class="hero-slider owl-carousel">
-			<div class="hs-item set-bg" data-setbg="img/slider-1.jpg">
-				<div class="hs-text">
-					<div class="container">
-						<h2>The  <span>Kapoera</span> </h2>
-						<p>Kapfather forever. Playing in memory of Najiwus, the prodigal son of Nalanah and Aargonos, <br> also known as the Don of the Kapoeras.  </p>
-						<!-- <a href="#" class="site-btn" target="_blank">Read More</a> -->
-					</div>
-				</div>
+	<section class="hero">
+		<div class="hs-text">
+			<div class="container">
+				<h2>The <span>Kapoera</span></h2>
+				<p>Kapfather forever. Playing in memory of Najiwus, the prodigal son of Nalanah and Aargonos, <br> also known as the Don of the Kapoeras. </p>
 			</div>
-			<!-- <div class="hs-item set-bg" data-setbg="img/slider-2.jpg">
-				<div class="hs-text">
-					<div class="container">
-						<h2>The  <span>Kapoera</span> </h2>
-						<p>Kapfather forever. Playing in memory of Najiwus, the prodigal son of Nalanah and Aargonos, <br> also known as the Don of the Kapoeras. </p>
-						<a href="#" class="site-btn">Read More</a>
-					</div>
-				</div>
-			</div> -->
 		</div>
 	</section>
+	
 	<!-- Hero section end -->
 
 
@@ -80,54 +91,35 @@
 	<!-- Latest news section end -->
 
 
-	<!-- Feature section -->
-	<section class="feature-section spad">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-6 p-0">
-					<div class="feature-item set-bg" data-setbg="img/features/1.jpg">
-						<span class="cata new">new</span>
-						<div class="fi-content text-white">
-							<h5><a href="#">Suspendisse ut justo tem por, rutrum</a></h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-							<a href="#" class="fi-comment">3 Comments</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 p-0">
-					<div class="feature-item set-bg" data-setbg="img/features/2.jpg">
-						<span class="cata strategy">strategy</span>
-						<div class="fi-content text-white">
-							<h5><a href="#">Justo tempor, rutrum erat id, molestie</a></h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-							<a href="#" class="fi-comment">3 Comments</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 p-0">
-					<div class="feature-item set-bg" data-setbg="img/features/3.jpg">
-						<span class="cata new">new</span>
-						<div class="fi-content text-white">
-							<h5><a href="#">Nullam lacinia ex eleifend orci porttitor</a></h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-							<a href="#" class="fi-comment">3 Comments</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 p-0">
-					<div class="feature-item set-bg" data-setbg="img/features/4.jpg">
-						<span class="cata racing">racing</span>
-						<div class="fi-content text-white">
-							<h5><a href="#">Lacinia ex eleifend orci suscipit</a></h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-							<a href="#" class="fi-comment">3 Comments</a>
-						</div>
-					</div>
-				</div>
+	<!-- Calendario section -->
+	<section>
+		<div class="wraper">
+			<div class="Mes"> Junho</div>
+			<div class="days-week">
+				<span>Segunda</span>
+				<span>Terça</span>
+				<span>Quarta</span>
+				<span>Quinta</span>
+				<span>Sexta</span>
+				<span>Sabado</span>
+				<span>Domingo</span>
+			</div>
+			<div class="number-days">
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
 		</div>
+
+		<script>
+			let el = document.querySelector('.number-days');
+			for(i = 1; i < 31; ++i){
+				el.innerHTML += '<span>'+i+'</span>';
+			}
+		</script>
 	</section>
-	<!-- Feature section end -->
+	
+	<!-- Calendario section end -->
 
 
 	<!-- Recent game section  -->
