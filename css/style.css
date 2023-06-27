@@ -324,7 +324,7 @@ ol {
   Hero Section
 ---------------------*/
 .hero{
-	background: url(./img/page-top-bg/slider-1.jpg) ;
+	background-image: url(/img/page-top-bg/slider-1.jpg) ;
 	width: 100%;
 	height: 865px;
 	
