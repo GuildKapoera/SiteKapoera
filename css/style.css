@@ -264,7 +264,7 @@ ol {
 
 .site-logo {
 	display: inline-block;
-	float: left;
+	float: left ;
 	padding-top: 6px;
 	width: 8%;
 }
@@ -1214,6 +1214,118 @@ ol {
 	font-size: 16px;
 	margin-left: 10px;
 	margin-right: 20px;
+}
+/*-----------------
+  Login page
+--------------------*/
+body{
+	background-color: #1d2b3a ;
+	
+}
+.areaLogin {
+	
+}
+
+.Login {
+	display: flex;
+	flex-direction:row;
+	align-items:flex-start;
+	text-align: center;
+}
+
+.box {
+	display: inline-block;
+	padding: 5rem 1rem;
+	margin: auto;
+	
+}
+
+.box2 {
+	display: inline-block;
+	align-items:flex-start;
+	padding: 5rem 1rem;
+	background: #ffb320;
+	border-radius: 10px;
+	margin: auto;
+}
+
+.box h1{
+	color: #ffb320;
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.356);
+}
+
+.inputBox {
+	position: relative;
+	width: 250px;
+}
+
+.inputBox input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid rgba(255,255,255,0.25);
+	background: #1d2b3a;
+	border-radius: 5px;
+	outline: none;
+	color: #fff;
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+
+.inputBox span {
+	color:  rgba(255,255,255,0.25);
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	pointer-events: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+	
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+	color: #ffb320;
+	transform: translateX(10px) translateY(-7px);
+	font-size: 0.65em;
+	padding: 0 10px;
+	background:#1d2b3a ;
+}
+.buttonLogin {
+	background: #ffb320;
+	border-radius: 10px;
+	padding: 5px 15px;
+	font-family: roboto, sans-serif;
+	border: none;
+	margin-bottom: 5px;
+	color: #1d2b3a;
+	font-weight: bold;
+}
+.buttonLogin:hover {
+	color: #ffb320;
+	background: #1d2b3a;
+}
+.box a{
+	color: #fff;
+	opacity: 0.45;
+}
+.box a:hover{
+	color: #ffb320;
+	opacity: 0.45;
+}
+.box2 h1 {
+	color: #1d2b3a;;
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.356);
+}
+
+.box2 a {
+	background: #ffb320;
+	padding: 5px 10px;
+	border-radius: 10px;
+	color: #1d2b3a;
+	font-weight: bold;
+}
+.box2 a:hover {
+	color: #ffb320;
+	background: #1d2b3a;
 }
 
 /*------------------
