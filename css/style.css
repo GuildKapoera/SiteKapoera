@@ -1218,11 +1218,8 @@ ol {
 /*-----------------
   Login page
 --------------------*/
-body{
+.bodyLogin{
 	background-color: #1d2b3a ;
-	
-}
-.areaLogin {
 	
 }
 
@@ -1327,6 +1324,89 @@ body{
 	color: #ffb320;
 	background: #1d2b3a;
 }
+/*-----------------
+  Formulario page
+--------------------*/
+.bodyForm {
+	background-color: #1d2b3a ;
+	min-height: 100vh;
+}
+.mainForm h2 {
+	text-align: center;
+	color: #ffb320;
+}
+.mainForm h3 {
+	color: #ffb320;
+	padding: 1rem;
+}
+.boxForm{
+	display: flex;
+	flex-direction:row;
+	align-items:flex-start;
+	text-align: center;
+}
+.boxForm1{
+	display: inline-block;
+	
+	margin: auto;
+}
+.boxForm2{
+	display: inline-block;
+	align-items:flex-start;
+	margin: auto;
+}
+.inputBoxForm {
+	position: relative;
+	width: 250px;	
+}
+.inputBoxForm input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid rgba(255,255,255,0.25);
+	background: #1d2b3a;
+	border-radius: 5px;
+	outline: none;
+	color: #fff;
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+.inputBoxForm span {
+	color:  rgba(255,255,255,0.25);
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	pointer-events: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+.inputBoxForm input:valid ~ span,
+.inputBoxForm input:focus ~ span {
+	color: #ffb320;
+	transform: translateX(10px) translateY(-7px);
+	font-size: 0.65em;
+	padding: 0 10px;
+	background:#1d2b3a ;
+}
+
+.inputCheck {
+	display: flex;
+	padding: 5px
+}
+.inputCheck label {
+	color: #fff;
+	opacity: 0.46;
+	text-align: center;
+	
+}
+.inputCheck input {
+	text-align: center;
+}
+
+.vocation {
+	display: flex;
+	font-weight: bold;
+}
+
 
 /*------------------
   Responsive

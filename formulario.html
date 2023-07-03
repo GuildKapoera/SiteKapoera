@@ -26,7 +26,7 @@
 	<![endif]-->
 
 </head>
-<body class="bodyLogin">
+<body class="bodyForm">
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
@@ -63,44 +63,70 @@
 	
 	<!-- Header section end -->
 
-
-
-	<!-- Latest news section -->
-	<div class="latest-news-section">
-		<div class="ln-title">Latest News</div>
-		<div class="news-ticker">
-			<div class="news-ticker-contant">
-				<div class="nt-item"><span class="new">new</span>Pisco ainda não tomou ban hoje!! </div>
-				<div class="nt-item"><span class="strategy">Atenção</span>Cuidado, o comensal da morte esta solto! </div>
-				<div class="nt-item"><span class="racing">Novidade</span> Alllllllllll llllllllexxxx ficou trapado de novo, mas não é novidade! </div>
-			</div>
-		</div>
-	</div>
-	<!-- Latest news section end -->
-
     <!-- Login section -->
 	
-    <main class="areaLogin">
-		<div class="Login">
-				<div class="box" >
-					<h1>Welcome !</h1>
-					<p>Sing in to your account</p>
-					<div class="inputBox">
-						<input type="email" name="email" id="email" required="required" autocomplete="on">
-						<span> E-mail</span>
-					</div>
-					<div class="inputBox">
-						<input type="password" name="senha" id="senha" required="required">
-						<span>Senha</span>
-					</div>
-					<button class="buttonLogin">Login</button>
-					<div><a href="#">Esqueci minha senha</a></div>
-				</div>
-				<div class="box2">
-					<h1>Join-us!</h1>
-					<div><a href="formulario.html">Cadastre-se</a></div>
-				</div>
-		</div>
+    <main class="mainForm">
+        <h2>Formulário de Cadastro</h2>
+
+        <div class="boxForm">
+            <div class="boxForm1">
+                <h3>Informações Pessoais</h3>
+                     
+                    <div class="inputBoxForm">
+                        <input type="email" required="required" id="email">
+                        <span>E-mail</span>
+                    </div>
+                    <div class="inputBoxForm">
+                        <input type="password" required="required" id="senha">
+                        <span>Senha</span>
+                    </div>
+                    <div class="inputBoxForm">
+                        <input type="text"required="required" id="nomeRL">
+                        <span>Seu nome RL</span>
+                    </div>
+                    <div class="inputBoxForm">
+                        <input type="tel" required="required" id="telContato">
+                        <span>Telefone</span>
+                    </div>
+            </div>
+            <div class="boxForm2">
+                <h3>Informações do Char</h3>
+                <div class="inputBoxForm">
+                    <input type="text" required="required">
+                    <span>Nome do Personagem</span>
+                </div>
+
+                <div class="vocation">
+                    <p>Vocação</p>
+                </div>
+
+                <div class="inputCheck">
+                    <input type="radio" name="vocation">
+                    <label for="Duid">Druid</label>
+                </div>
+                <div class="inputCheck">
+                    <input type="radio" name="vocation">
+                    <label for="Sorcerer">Sorcerer</label>
+                </div>
+                <div class="inputCheck">
+                    <input type="radio" name="vocation">
+                    <label for="Knight">Knight</label>
+                </div>
+                <div class="inputCheck">
+                    <input type="radio" name="vocation">
+                    <label for="Paladin">Paladin</label>
+                </div>
+                <div class="inputBoxForm">
+                    <input type="text" required="required" id="level">
+                    <span>Faixa de Level</span>
+                </div>
+                <div class="inputBoxForm" >
+                    <input type="text" required="required" id="indicacao">
+                    <span>Indicado por?</span>
+                </div>
+            </div>
+        </div>
+    
 	</main>
     <!-- Login section end -->
 
