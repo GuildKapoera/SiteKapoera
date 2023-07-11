@@ -322,6 +322,7 @@ ol {
 /*------------------
   Hero Section
 ---------------------*/
+
 .hero{
 	background-image: url(../img/page-top-bg/home.jpg) ;
 	width: 100%;
@@ -757,16 +758,23 @@ ol {
 /*-----------------
   About page
 --------------------*/
-.about .container p{
+#about {
+	background: #041829;
+}
+.about .container p {
 	text-indent: 1rem;
 	margin-top: 2rem;
-
+	font-size: 16px;
+	color: white;
+	
 }
 .about .container span{
-	color: #1f2225;;
+	color: #fbb710;
 	display: flex;
 	justify-content: center;
+	margin-bottom: 30px;
 }
+
 
 /*-----------------
   Contact page
