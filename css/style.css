@@ -147,7 +147,7 @@ ol {
 	border-radius: 50px;
 	font-weight: 500;
 	border: none;
-	background: #ffb320;
+	background: #d48656 ;
 	cursor: pointer;
 }
 
@@ -771,11 +771,8 @@ ol {
 /*-----------------
   Contact page
 --------------------*/
-
-.map {
-	height: 515px;
-	background: #ddd;
-	margin-bottom: 90px;
+.comment-title {
+	color: #d48656;
 }
 
 .contact-info-list {
@@ -793,7 +790,7 @@ ol {
 	float: left;
 	font-size: 16px;
 	font-weight: 700;
-	color: #ffb320;
+	color: #d48656;
 }
 
 .contact-info-list .cf-right {
@@ -802,11 +799,9 @@ ol {
 	padding-left: 100px;
 }
 
-.social-links a {
-	color: #474747;
-	font-size: 16px;
-	margin-left: 10px;
-	margin-right: 20px;
+.inputComent {
+	display: flex;
+	margin: 10px;
 }
 /*-----------------
   Login page
