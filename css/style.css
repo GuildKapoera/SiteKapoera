@@ -253,6 +253,7 @@ ol {
 ---------------------*/
 .header {
 	width: 100%;
+	
 
 }
 .header-section {
@@ -260,6 +261,7 @@ ol {
 	clear: both;
 	overflow: hidden;
 	padding: 18px 0;
+	
 }
 
 .site-logo {
@@ -1002,7 +1004,25 @@ ol {
 	display: flex;
 	font-weight: bold;
 }
+.formButtonBox {
+	text-align: center;
+	margin: 2rem;
+}
+.formButton {
+	border: none;
+	background-color:#ffb320;
+	border-radius: 30px;
+	padding: 0.5rem 3rem;
+	font-size: 1.2rem;
+	color: #131313;
+}
 
+.formButton:hover {
+	background-color:#1d2b3a;
+	color: #ffb320;
+	text-transform: uppercase;
+	font-weight: bold;
+}
 
 /*------------------
   Responsive
