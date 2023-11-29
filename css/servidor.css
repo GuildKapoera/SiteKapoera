@@ -1,0 +1,85 @@
+
+.about-page-box {
+	background: url(../img/page-top-bg/3.jpg) 100% top no-repeat;
+	height: 25em;
+	background-color: #1d2b3a;
+}
+.about-page-title {
+	height: 20em;
+	display: flex;
+	align-items: end;
+	height: 25em;
+    width: 80%;
+    margin: auto;
+}
+.about-page-title h2 {
+	color: var(--color3);
+	letter-spacing: .1em;
+    font-size: 3em;
+    font-weight: lighter;
+}
+.servidorMain {
+	background: #1d2b3a;
+}
+.servidorMain h3 {
+	color: #ffb320;
+	text-align: center;
+	padding: 2rem;
+    font-size: 1.6em;
+}
+.servidorMain li {
+	color: #878787;
+}
+.huntedList {
+	width: 50%;
+	margin: auto;
+}
+.huntedList ul {
+	columns: 2;
+	text-align: center;
+}
+.huntedList li {
+	list-style: none;
+    font-size: 1.3em;
+}
+
+.huntClaimed {
+	width: 50%;
+	margin: auto;
+	padding-bottom:2em;
+}
+.hintClaimed h3 {
+    font-size: 1.6em;
+}
+.huntClaimed span {
+	color: #fbb710;
+	text-transform: uppercase;
+	display: block;
+	padding-top: 1rem;
+}
+
+.huntClaimed ul {
+	columns: 2;
+	text-align: center;
+}
+.huntClaimed li {
+	list-style: none;
+	padding: 3px;
+    font-size: 1.3em;
+}
+.city {
+    font-size: 1.4em;
+}
+@media screen and (max-width:51.87em) {
+	.about-page-box {
+		background: url(../img/page-top-bg/3.menor.jpg) 100% top no-repeat;
+		height: 25em;
+		background-color: #1d2b3a;
+	}
+	.huntedList ul {
+		columns: 1;
+	}
+	.huntClaimed ul {
+		columns: 1;
+	}
+}

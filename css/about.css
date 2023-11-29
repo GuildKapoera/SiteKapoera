@@ -1,0 +1,78 @@
+
+.about-page-box{
+    height: 25em;
+   
+}
+.about-page-title {
+   /* position: relative; */
+    display: flex;
+    align-items: end;
+    height: 24em;
+    width: 80%;
+    margin: auto;
+
+}
+.about-page-title h2{
+    color: var(--color3);
+    letter-spacing: .1em;
+    font-size: 3em;
+    font-weight: lighter;
+}
+.about-page {
+    height: 25em;
+    background: url(../img/page-top-bg/6.jpg) top no-repeat;
+    background-color: var(--color4);
+    
+}
+.about-main {
+    background: var(--color4);
+    color: var(--color3);
+}
+.about-main-content {
+    width: 80%;
+    margin: auto;
+}
+.about-main-content p {
+    padding: 1em 0;
+    line-height: 1.8em;
+    font-size: 1.1em;
+}
+.about-main-content span{
+    color: var(--color2);
+}
+.about-main-span {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+/* GUILD HOUSE SECTION  */
+.guild-house {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0;
+    align-items: center;
+}
+.guild-house-img img {
+    border-radius: 8px;
+}
+.guild-house-info span {
+    color: var(--color2);
+}
+
+/* GUILD SECTION RESPONSIVE */
+
+@media screen and (max-width:51.87em){
+    .guild-house {
+        display: block;
+        text-align: center;
+    }
+    .guild-house-info {
+        padding-bottom: 2em;
+    }
+    .guild-house-img img {
+        width: 70%;
+    }
+}

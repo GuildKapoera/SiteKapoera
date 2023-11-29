@@ -1,0 +1,196 @@
+
+/*------------------
+  Header section
+---------------------*/
+.header-section {
+  position:sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+}
+.header-section-box {
+  background-color: var(--color1);
+  align-items: center;
+  
+}
+.header-section-logo{
+  padding: 1em;
+}
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 1em;
+}
+
+.main-menu ul {
+  list-style: none;
+  text-align: end;
+  
+}
+.header-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 130px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--color1);
+  transition: max-height .5s;
+}
+.main-menu li {
+  padding: 0.2em;
+}
+.main-menu li a {
+  text-decoration: none;
+  color: var(--color3);
+  display: block;
+  padding: 0.3em;
+}
+.nav-item-regras{
+ padding: 0.4em;
+ color: var(--color3);
+  
+}
+
+.main-menu li a:hover {
+  background-color: var(--color2);
+  border-radius: 10px;
+}
+.submenu li {
+  padding-right: 1.2em;
+}
+
+
+/* sub-menu */
+
+
+
+/* BOTÃO MENU MOBILE - MENU HAMBURGUER */
+.header-section-box {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.menu-icon {
+  position: relative;
+  cursor: pointer;
+  height: 25px;
+}
+
+.nav-icon {
+  background-color: var(--color3);
+  display: inline-block;
+  height: 2px;
+  width: 24px;
+  position: relative;
+  
+}
+/* icone de tres linhas do botão menu */
+.nav-icon::after, .nav-icon::before{
+  content: "";
+  background-color: var(--color3);
+  display: inline-block;
+  height: 2px;
+  width: 24px;
+  position: absolute;
+  transition: .6s;
+}
+.nav-icon::after {
+  transform: translateY(8px) ;
+}
+.nav-icon::before {
+  transform: translateY(-8px) ;
+}
+.menu-btn:checked ~ .header-menu {
+  max-height: 100vh;
+}
+/* icone em x  do botão menu */
+.menu-btn:checked+.menu-icon .nav-icon{
+  background-color: transparent;
+}
+.menu-btn:checked+.menu-icon .nav-icon::after{
+  transform: rotate(45deg);
+}
+.menu-btn:checked+.menu-icon .nav-icon::before{
+  transform: rotate(-45deg);
+}
+
+/* abrir janela menu quando utiliza tab */
+.header-menu:focus-within{
+  max-height: 100vh;
+}
+/*------------------
+  Header section responsive
+---------------------*/
+
+@media screen and (min-width:50em) {
+  .header-section {
+    position:sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .header-section-box {
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header-menu {
+    position: static;
+    max-height: initial;
+  }
+  .menu-btn, .menu-icon {
+    display: none;
+  }
+  
+  .main-menu ul {
+    display: flex;
+    gap: 1em;
+  }
+  .main-menu ul .btn {
+    background-color: var(--color2);
+    padding: 0 3em;
+    margin-left: 3em;
+    border-radius: 10px;
+  }
+  .submenu {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: var(--color1);
+    transition: max-height 0.5s;
+    top: 100%;
+    list-style: none;
+    padding: 0;
+  }
+  .submenu li {
+    padding: 0.2em;
+  }
+  .submenu li a {
+    text-decoration: none;
+    color: var(--color3);
+    display: block;
+    padding: 0.3em;
+  }
+  .header-menu li:hover .submenu {
+    max-height: 200px; /* Adjust as needed */
+    overflow: visible;
+  }
+    
+  .nav-item-regras:hover {
+    background-color: var(--color1);
+    color: var(--color3);
+  }
+ .nav-item-regras span {
+  display: block;
+  padding: 0.3em;
+ }
+ .submenu span {
+  display: none;
+ }
+}
+
+
+
