@@ -17,6 +17,7 @@
     letter-spacing: .1em;
     font-size: 3em;
     font-weight: lighter;
+    text-shadow: 2px 2px 3px black;
 }
 .about-page {
     height: 25em;

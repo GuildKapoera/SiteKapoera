@@ -16,14 +16,54 @@
     letter-spacing: .1em;
     font-size: 3em;
     font-weight: lighter;
+    text-shadow: 2px 2px 3px black;
 }
-.main-regras {
-    display: flex;
+.section-regras {
     background-color: var(--color1);
-
 }
 .main-nav {
     background-color: var(--color1);
     text-align: center;
     padding: 0.5em 1em;
 }
+.main-regras {
+    width: 80%;
+    margin: auto;
+}
+.main-info {
+    text-align: center;
+    color: var(--color2);
+}
+.main-info h2 {
+    padding-top: 3rem;
+    text-shadow: 2px 2px 2px rgba(131, 111, 20, 0.226);
+}
+.main-info p {
+    opacity: .6;
+    font-size: 0.8rem;
+}
+.info-regras {
+    padding: 2rem 0;
+    color: var(--color3);
+    
+}
+.info-regras li {
+    padding: 0.5rem 0;
+    list-style-type: circle;
+}
+.main-faq-title {
+    text-align: center;
+    color: var(--color2);
+    text-shadow: 2px 2px 2px rgba(131, 111, 20, 0.226);
+    padding: 1.5rem 0;
+}
+.info-faq summary {
+    color: var(--color2);
+    opacity: 0.8;
+    padding: 0.8rem 0;
+}
+.info-faq p {
+    color: var(--color3);
+}
+
+

@@ -1,0 +1,183 @@
+
+/* <!-- Header section -->  */
+
+.home-page {
+    background: url(../img/page-top-bg/home.jpg) no-repeat;
+	background-color: #050F1E;
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+}
+.home-page .home-page-name {
+    position: relative;
+  	text-align: center;
+	background: rgba(3, 3, 3, 0.356);
+	display: inline-block;
+	/* padding: 20px;
+	border-radius: 5px;
+	font-size: 5rem; ;*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+}
+.home-page .home-page-name h2 {
+    color: #fff;
+	font-weight: 400;
+	font-size: 60px;
+	margin-bottom: 30px;
+	position: relative;
+	font-family: 'corleone';
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.719);
+}
+.home-page .home-page-name h2 span {
+    color: #ffb320;
+    font-family: 'corleone';
+}
+.home-page .home-page-name p {
+    color: #fff;
+	position: relative;
+}
+/* <!-- Header section end-->  */
+
+/*---------------------
+  Latest News section
+-----------------------*/
+
+.news-ticker {
+	overflow: hidden;
+}
+.latest-news-section {
+	display: flex;
+	background-color: var(--color1);
+	align-items: center;
+}
+.ln-title {
+	color: var(--color3);
+	font-size: 2em;
+	padding: 1.5em;
+	z-index: 0;
+	background-color: var(--color2);
+	white-space: nowrap;
+	
+}
+.news-ticker-contant {
+	display: flex;
+	gap: 2em;
+		
+}
+
+.nt-item {
+	color: var(--color3);
+	white-space: nowrap;
+	
+}
+
+.nt-item .new{
+	background-color: var(--color2);
+	color: var(--color3);
+	padding: .5em 0.9em;
+	margin-right: 1em;
+}
+.nt-item .attention {
+	background-color: var(--color2);
+	color: var(--color3);
+	padding: .5em 0.9em;
+	margin-right: 1em;
+}
+.nt-item .novidade {
+	background-color: var(--color2);
+	color: var(--color3);
+	padding: .5em 0.9em;
+	margin-right: 1em;
+	
+}
+/* ANIMAÇÃO LATEST  */
+
+@keyframes latest {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
+.news-ticker-contant {
+	animation-name: latest;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+	animation-timing-function: linear;
+}
+.news-ticker-contant:hover{
+	animation-play-state: paused;
+}
+/*------------------
+Latest section responsive
+---------------------*/
+@media screen and (max-width:51.87em){
+	.home-page {
+		background-position: center;
+	}
+	.ln-title {
+		font-size: 1.2em;
+		transition: 1s;
+	}
+	.news-ticker-contant {
+		animation-name: latest;
+		animation-duration: 20s;
+		animation-iteration-count: infinite;
+		animation-direction: reverse;
+		animation-timing-function: linear;
+	}
+}
+
+/* ANIMAÇÃO LATEST end  */
+
+/* <!-- calendario section-->  */
+
+
+/* <!-- calendario section end-->  */
+
+/* <!-- rank section--> */
+main {
+	background-color: var(--color1);
+}
+.main-section-rank {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	padding-top: 5rem;
+}
+.rank-title {
+	color: var(--color2);
+}
+.section-input-rank {
+	padding: 2rem 0;
+}
+.input-rank{
+	background-color: var(--color1);
+	color: var(--color3);
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+.section-table-rank {
+	color: var(--color3);
+	display: flex;
+	justify-content: center;
+	padding: 1.5rem 0;
+
+}
+.table-rank {
+	border: 1px solid var(--color2);
+	padding: 0.8rem;
+	text-align: left;
+	border-radius: 5px;
+}
+
+.table-rank th {
+	color: var(--color2);
+	padding-bottom: .8rem;
+	
+}
+/* <!-- rank section end--> */
+
