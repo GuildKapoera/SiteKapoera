@@ -1,0 +1,170 @@
+.fotos-page {
+    height:25em;
+    width: 100%;
+    background: url(../img/page-top-bg/8.jpg) no-repeat center;
+    background-size: cover;
+}
+.fotos-page-title {
+    display: flex;
+    align-items: end;
+    height: 23em;
+    width: 80%;
+    margin: auto;
+}
+.fotos-page-title h2 {
+    color: var(--color3);
+    letter-spacing: .1em;
+    font-size: 3em;
+    font-weight: lighter;
+    text-shadow: 2px 2px 3px black;
+}
+.nav-album {
+    padding: 1rem;
+    text-wrap: nowrap;
+}
+.nav-album li {
+    list-style: none;
+    line-height: 1.5rem;
+}
+.nav-album li a {
+    color: var(--color2);
+    text-decoration: none;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+.nav-album li a:hover {
+    color: var(--color3);
+}
+
+/* GALLERY */
+.album-section {
+    padding-top: 2rem;
+    background-color: var(--color1);
+    display: flex;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    box-sizing: border-box;
+}
+
+.foto img {
+    width: 20rem;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+}
+.button-close {
+    display: none;
+}
+
+.foto:target {
+    position: fixed;
+    width: 40rem;
+    top: 25%;
+    left: 20%;
+    padding: .5rem;
+    border: solid 1px #333;
+    box-shadow: 0 0 25px 10px #000 ;
+    background-color: var(--color1);
+    border-radius: 5px;
+}
+.foto:target img {
+    width: 40rem;
+}
+.foto:target .button-close {
+    display: block;
+}
+.button-close {
+    margin-top: 0.3rem;
+    text-align: end;
+}
+.button-close a {
+    text-decoration: none;
+    color: var(--color2);
+    padding: .1rem .8rem;
+    border-radius: 5px;
+    opacity: 0.2;
+}
+.button-close a:hover{
+    opacity: 1;
+}
+
+
+ /* RESPONSIVE MOBILE GALLERY */
+@media screen and (max-width: 57.3rem) {
+    .foto:target {
+        width: 30rem;
+        top: 25%;
+        left: 10%; 
+    }
+    .foto:target img {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 34.75rem) {
+    .album-section {
+        display: block;
+        padding-left: 2rem;
+    }
+    .foto:target {
+        width: 28rem;
+        top: 25%;
+        left: 7%; 
+    }
+    .foto:target img {
+        width: 28rem;
+    }
+}
+
+@media screen and (max-width: 31.06rem) {
+    .foto:target {
+        width: 24rem;
+        top: 25%;
+        left: 7%; 
+    }
+    .foto:target img {
+        width: 24rem;
+    }
+}
+@media screen and (max-width: 26.7rem) {
+    .foto:target {
+        width: 22rem;
+        top: 25%;
+        left: 5%; 
+    }
+    .foto:target img {
+        width: 22rem;
+    }
+    .foto img {
+        width: 18rem;
+    }
+}
+@media screen and (max-width: 25rem) {
+    .foto:target {
+        width: 20rem;
+        top: 25%;
+        left: 5%; 
+    }
+    .foto:target img {
+        width: 20rem;
+    }
+    .foto img {
+        width: 15rem;
+    }
+}
+@media screen and (max-width: 20.8rem) {
+    .foto:target {
+        width: 18rem;
+        top: 25%;
+        left: 3%; 
+    }
+    .foto:target img {
+        width: 18rem;
+    }
+    .foto img {
+        width: 12rem;
+    }
+}
