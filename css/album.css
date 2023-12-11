@@ -61,7 +61,7 @@
 
 .foto:target {
     position: fixed;
-    width: 40rem;
+    width: 50rem;
     top: 25%;
     left: 20%;
     padding: .5rem;
@@ -71,7 +71,7 @@
     border-radius: 5px;
 }
 .foto:target img {
-    width: 40rem;
+    width: 50rem;
 }
 .foto:target .button-close {
     display: block;
@@ -95,12 +95,22 @@
  /* RESPONSIVE MOBILE GALLERY */
 @media screen and (max-width: 57.3rem) {
     .foto:target {
-        width: 30rem;
+        width: 40rem;
         top: 25%;
         left: 10%; 
     }
     .foto:target img {
-        width: 30rem;
+        width: 40rem;
+    }
+}
+@media screen and (max-width: 40.7rem) {
+    .foto:target {
+        width: 35rem;
+        top: 25%;
+        left: 10%; 
+    }
+    .foto:target img {
+        width: 35rem;
     }
 }
 
